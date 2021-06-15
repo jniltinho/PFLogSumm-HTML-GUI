@@ -26,13 +26,13 @@ For Ubuntu/Debian based operating systems
 apt-get -y install pflogsumm 
 ```
 
-## Script installation
+## Install ISPConfig Webmail
 
 You can clone or download the script direct to a location of your choice. Here is an example setup:
 ```
 cd /opt
 git clone https://github.com/jniltinho/PFLogSumm-HTML-GUI.git
-mkdir -p /usr/local/ispconfig/interface/web/grafico
+mkdir -p /var/www/webmail.domain.com/web/stats/grafico
 
 echo '#PFLOGSUMUI CONFIG
 
@@ -44,8 +44,9 @@ PFLOGSUMMOPTIONS=" --verbose_msg_detail --zero_fill "
 PFLOGSUMMBIN="/usr/sbin/pflogsumm  "
 
 ##  HTML Output
-HTMLOUTPUTDIR="/usr/local/ispconfig/interface/web/grafico/"
-HTMLOUTPUT_INDEXDASHBOARD="index.html"' >/etc/pflogsumui.conf
+HTMLOUTPUTDIR="/var/www/webmail.domain.com/web/stats/grafico/"
+HTMLOUTPUT_INDEXDASHBOARD="index.html"
+' >/etc/pflogsumui.conf
 
 /opt/PFLogSumm-HTML-GUI/pflogsummUIReport.sh
 
@@ -80,7 +81,7 @@ PFLOGSUMMOPTIONS=" --verbose_msg_detail --zero_fill "
 PFLOGSUMMBIN="/usr/sbin/pflogsumm  "
 
 ##  HTML Output
-HTMLOUTPUTDIR="/usr/local/ispconfig/interface/web/grafico/"
+HTMLOUTPUTDIR="/var/www/webmail.domain.com/web/stats/grafico/"
 HTMLOUTPUT_INDEXDASHBOARD="index.html"
 
 ```
