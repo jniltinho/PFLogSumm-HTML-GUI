@@ -51,7 +51,7 @@ HTMLOUTPUT_INDEXDASHBOARD="index.html"
 /opt/PFLogSumm-HTML-GUI/pflogsummUIReport.sh
 
 ## Show web
-## https://ip_ispconfig_admin:8080/grafico/
+## http://webmail.domain.com/stats/grafico/
 ```
 
 ## Script updates
